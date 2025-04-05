@@ -9,16 +9,19 @@ def index(request) -> HttpResponse:
     return render(request, "main/index.html", context)
 
 
-def account(request) -> HttpResponse:
-    return HttpResponse("Account page")
+def start(request) -> HttpResponse:
+    context = {"title": "Home", "content": "Строим экономику будущего - вместе"}
+    return render(request, "main/start.html", context)
 
 
-def authorization(request) -> HttpResponse:
-    return HttpResponse("Authorization page")
+def discover(request) -> HttpResponse:
+    context = {"title": "Home", "content": "Строим экономику будущего - вместе"}
+    return render(request, "main/discover.html", context)
 
 
-def registration(request) -> HttpResponse:
-    return HttpResponse("Registration page")
+def about(request) -> HttpResponse:
+    context = {"title": "Home", "content": "Строим экономику будущего - вместе"}
+    return render(request, "main/about.html", context)
 
 
 def project(request) -> HttpResponse:
